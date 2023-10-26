@@ -20,8 +20,8 @@ public class Bullet
     public int ImpactDamage = 1;
     [Header("How many times can the bullet hit an enemy?")]
     public int ImpactHealth = 1;
-    [Header("For how many seconds does th ebullet live for?")]
-    public int bulletLifeTime = 50;
+    [Header("For how many seconds does the bullet live for?")]
+    public int lifeTime = 50;
 
     public void Copy(Bullet aBulletToCopy)
     {
