@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        PlayerMoneyText.text = CurrentPlayerData.PlayerMoney.ToString() + "$";
+        PlayerMoneyText.text = "$" + CurrentPlayerData.PlayerMoney.ToString();
     }
     public void OnSpawnNextWave()
     {

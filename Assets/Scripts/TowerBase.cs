@@ -12,6 +12,7 @@ public class TowerBase : MonoBehaviour
     public float BulletDelayTimer = 0.0f;
     public int CurrentWave = 0;
     public float WaveTimer = 0.0f;
+    public int TowerCost = 0;
     //public Vector3 FirePositionOffset = Vector3.zero;
     public EnemyBase LockedOnTargetEnemy = null;
     void Start()
