@@ -360,6 +360,7 @@ MonoBehaviour:
     SpawnDelay: 0
     MaxHealth: 10
     Damage: 3
+    MoneyOnKill: 10
     MoveSpeed: 1
     Health: 0
     MovementDirection: {x: 0, y: 0, z: 0}

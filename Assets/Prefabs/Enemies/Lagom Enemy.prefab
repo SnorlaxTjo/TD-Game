@@ -124,6 +124,7 @@ MonoBehaviour:
     SpawnDelay: 0
     MaxHealth: 3
     Damage: 2
+    MoneyOnKill: 5
     MoveSpeed: 4
     Health: 0
     MovementDirection: {x: 0, y: 0, z: 0}
