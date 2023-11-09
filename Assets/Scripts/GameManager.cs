@@ -37,11 +37,11 @@ public class GameManager : MonoBehaviour
     public int CurrentEnemyWave = 0;
     public Transform EnemyStartingPos = null;
     [Header("Static References")]
-    public PlayerData CurrentPlayerData = null;
-    public TextMeshProUGUI PlayerHealthText = null;
-    public TextMeshProUGUI PlayerMoneyText = null;
-    public TextMeshProUGUI WaveNumberText = null;
-    [Header("Dynamic References")]
+        public PlayerData CurrentPlayerData = null;
+        public TextMeshProUGUI PlayerHealthText = null;
+        public TextMeshProUGUI PlayerMoneyText = null;
+        public TextMeshProUGUI WaveNumberText = null;
+   [Header("Dynamic References")]
     public List<EnemyBase> AllEnemies = new List<EnemyBase>();
 
 
@@ -73,9 +73,9 @@ public class GameManager : MonoBehaviour
 
     private void DoSpawnWave()   
     {
-        foreach(string wavePart in EnemyWavesInLevel[CurrentEnemyWave].WaveKey)
+        foreach(GameObject wavePart in EnemyWavesInLevel[CurrentEnemyWave].WaveKey)
         {
-           var enemyWave = SpawnObject(wavePart,EnemyStartingPos.position);
+           var enemyWave = SpawnObject(wavePart.name,EnemyStartingPos.position);
             enemyWave.GetComponent<EnemyWave>().MovementDirection = this.transform.position - EnemyStartingPos.position;
         }
         CurrentEnemyWave++;

@@ -125,8 +125,8 @@ MonoBehaviour:
     FireAngleOffset: 0
     FireDelay: 0
     SizeFactor: 1
-    ImpactDamage: 3
-    ImpactHealth: 3
+    ImpactDamage: 1
+    ImpactHealth: 1
     lifeTime: 10
   myMeshRenderer: {fileID: 2007429233915539440}
   MoveDirection: {x: 0, y: 0, z: 0}
