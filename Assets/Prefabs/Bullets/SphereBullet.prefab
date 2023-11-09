@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletData:
-    SpawnKey: SphereBullet
+    SpawnKey: {fileID: 0}
     ColorFactor: {r: 1, g: 1, b: 1, a: 1}
     SpeedFactor: 1
     FireAngleOffset: 0
@@ -127,5 +127,6 @@ MonoBehaviour:
     SizeFactor: 1
     ImpactDamage: 1
     ImpactHealth: 1
+    lifeTime: 10
   myMeshRenderer: {fileID: 2007429233915539440}
   MoveDirection: {x: 0, y: 0, z: 0}

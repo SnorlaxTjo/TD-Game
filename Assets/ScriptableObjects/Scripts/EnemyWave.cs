@@ -56,6 +56,6 @@ public class EnemyWave : MonoBehaviour
 [System.Serializable]
 public class EnemyWaveContainer 
 {
-    public List<string> WaveKey = new List<string>();
+    public List<GameObject> WaveKey = new List<GameObject>();
 }
 

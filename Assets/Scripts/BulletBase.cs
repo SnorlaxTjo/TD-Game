@@ -34,7 +34,10 @@ public class BulletBase : MonoBehaviour
         var enemyCollider = other.gameObject.GetComponent<EnemyBase>();
         if (enemyCollider != null)
         {
-            enemyCollider.ImpactDamage(BulletData.ImpactDamage);
+            if(BulletData.ImpactHealth > 0)
+            {
+                enemyCollider.ImpactDamage(BulletData.ImpactDamage);
+            }
             BulletData.ImpactHealth--;
             if (BulletData.ImpactHealth <= 0)
             {
