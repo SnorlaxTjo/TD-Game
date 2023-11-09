@@ -24,15 +24,26 @@ public class EnemyBase : MonoBehaviour
     public void ImpactDamage(int aDamageNr)
     {
         EnemyData.Health -= aDamageNr;
-        if(EnemyData.Health < 0 )
+        if(EnemyData.Health <= 0 )
         {
             GameManager.GlobalGameManager.CurrentPlayerData.PlayerMoney += EnemyData.MoneyOnKill;
+            GameManager.GlobalGameManager.amountOfEnemiesAlive--;
+            if (GameManager.GlobalGameManager.amountOfEnemiesAlive <= 0)
+            {
+                GameManager.GlobalGameManager.OnSpawnNextWave();
+            }
+
             GameObject.Destroy(this.gameObject);
         }
     }
     void Awake()
     {
         GameManager.GlobalGameManager.AllEnemies.Add(this);
+    }
+
+    private void Start()
+    {
+        GameManager.GlobalGameManager.amountOfEnemiesAlive++;
     }
 
     void Update()

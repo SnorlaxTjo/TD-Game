@@ -1792,6 +1792,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1841124901}
     - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: nextWaveCountdownText
+      value: 'Next Wave in:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
+      propertyPath: timeToWaitUntilWaveSpawn
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7314929749039706950, guid: 97c3b63cda748f1408d01b69abfb5f51, type: 3}
       propertyPath: SpawnableObjects.Array.size
       value: 6
       objectReference: {fileID: 0}
