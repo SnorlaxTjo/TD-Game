@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Triple Fast Bullet
   m_EditorClassIdentifier: 
   TrackingAimOffset: 0
-  FireDelay: 1
+  FireDelay: 3
   Bullets:
   - SpawnKey: {fileID: 506468609888630188, guid: d591e24532e55534bb2c14646b12538b, type: 3}
     ColorFactor: {r: 0.023584902, g: 0.29754236, b: 1, a: 0}
@@ -23,6 +23,7 @@ MonoBehaviour:
     SizeFactor: 1
     ImpactDamage: 1
     ImpactHealth: 1
+    lifeTime: 50
   - SpawnKey: {fileID: 506468609888630188, guid: d591e24532e55534bb2c14646b12538b, type: 3}
     ColorFactor: {r: 0.023584902, g: 0.29754236, b: 1, a: 0}
     SpeedFactor: 20
@@ -31,6 +32,7 @@ MonoBehaviour:
     SizeFactor: 1
     ImpactDamage: 1
     ImpactHealth: 1
+    lifeTime: 50
   - SpawnKey: {fileID: 506468609888630188, guid: d591e24532e55534bb2c14646b12538b, type: 3}
     ColorFactor: {r: 0.023584902, g: 0.29754236, b: 1, a: 0}
     SpeedFactor: 20
@@ -39,3 +41,4 @@ MonoBehaviour:
     SizeFactor: 1
     ImpactDamage: 1
     ImpactHealth: 1
+    lifeTime: 50

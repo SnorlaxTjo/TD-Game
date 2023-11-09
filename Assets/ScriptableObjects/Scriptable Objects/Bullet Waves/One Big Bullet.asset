@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: One Big Bullet
   m_EditorClassIdentifier: 
   TrackingAimOffset: 0
-  FireDelay: 1
+  FireDelay: 3
   Bullets:
   - SpawnKey: {fileID: 506468609888630188, guid: 37874fcded8525d4ba324ef4571f8aa9, type: 3}
     ColorFactor: {r: 0, g: 0, b: 0, a: 0}
@@ -23,3 +23,4 @@ MonoBehaviour:
     SizeFactor: 10
     ImpactDamage: 10
     ImpactHealth: 3
+    lifeTime: 50
